@@ -1,0 +1,58 @@
+.container--max {
+    padding: 0 80px;
+
+    @media screen and(max-width: 992px) {
+        padding: 0 40px;
+    }
+
+    @media screen and(max-width: 768px) {
+        padding: 0 20px;
+    }
+}
+
+.object-cover {
+    object-fit: cover;
+    object-position: center;
+}
+
+.h-150 {
+    height: 150px;
+}
+
+.m-h-70{
+    max-height: 60px;
+    object-fit: contain;
+}
+.container{
+    @media screen and (min-width: $bp-MD){
+        max-width: 940px;
+    }
+
+    @media screen and (min-width: $bp-XL){
+        max-width: 1270px;
+    }
+}
+
+.backdrop-transparent{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 5;
+    display: none;
+
+    &[data-visible="true"]{
+        display: block;
+    }
+}
+
+.w-auto{
+    width: auto !important;
+    display: inline-block !important;
+}
+
+.bg-gray-dark{
+    background-color: #EDEDED !important;
+}
