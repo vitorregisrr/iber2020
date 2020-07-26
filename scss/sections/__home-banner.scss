@@ -1,0 +1,16 @@
+.home-banner{
+    height: 96vh;
+
+    &__caption{
+        position: absolute;
+        opacity: 0;
+    }
+
+    img{
+        width: 100%;
+
+        @media screen and (max-width: $bp-MD){
+            width: 160%;
+        }
+    }
+}

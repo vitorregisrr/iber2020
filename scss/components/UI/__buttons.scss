@@ -1,126 +1,51 @@
-.btn-google{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1.1px solid #FF5757;
-    border-radius: 5px;
-    width: 100%;
-    padding: 16px;    
+.btn-cprimary{
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 4.6px 18px;
+    background-color: #7DA04C;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 16px;
-    background-color: transparent;
-    color: #FF5757 !important; 
-    -webkit-appearance: none;
-    appearance: none;
-    @include transition;
-
-    &:hover{
-        background-color: #FF5757;
-        color: #fff !important;
-    }
-
-    i{
-        font-size: 18px;
-        margin-right: 14px;
-        display: block;
-    }
-}
-
-.btn-default{
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
+    font-size: 14px;
     color: #fff;
-    width: 100%;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 6px;
-    background-color: #E1941B;
-    -webkit-appearance: none;
-    appearance: none;
     @include transition();
 
     &:hover{
-        background-color: darken(#E1941B, 2);
-        color: #fff !important;
+        color: #fff;
+        background-color: darken($color-primary, 4);
     }
 }
 
-.btn-large-blue{
-    border: 1.2px solid transparentize(#414292, .5);
-    color: #414292;
-    background: none;
-    border-radius: 5px;
-    padding: 36px 30px 36px 37px;
-    background-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
+.btn-csecondary{
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 4.6px 18px;
+    background-color: $color-secondary;
+    text-transform: uppercase;
     text-align: center;
+    font-size: 14px;
+    color: #fff;
     @include transition();
 
-
-    &.xl{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        text-align: left;
-
-        i{
-            font-size: 37px;
-            width:  70px;
-            text-align: left;
-
-            &.fa-hands{
-                margin-left: -3px;
-                margin-right: 4px;
-            }
-         }
-
-         .desc{
-             display: flex;
-             flex-direction: column;
-             font-weight: 500;
-
-             span{
-                 margin-top: 3px;
-                 font-weight: 400;
-                 color: #909090;
-                 transition: all 0.4s;
-             }
-         }
-    }
-
-    &.horizontal{
-        padding: 20px 90px;
-    }
-
-    &.active, &:hover{
-        background-color: #414292;
+    &:hover{
         color: #fff;
-
-        span{
-            color: #fff !important;
-        }
+        background-color: darken($color-secondary, 4);
     }
 }
 
-.btn-large-danger{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.2px solid #FF5757;
-    color: #FF5757; 
-    background: none;
-    border-radius: 5px;
-    padding: 36px 20px 36px 20px;
-    background-color: transparent;
-    -webkit-appearance: none;
-    appearance: none;
+.btn-cdark{
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 4.6px 18px;
+    background-color: $color-dark;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
     @include transition();
 
-    &.active, &:hover{
-        background-color: #FF5757;
+    &:hover{
         color: #fff;
+        background-color: darken($color-secondary, 4);
     }
 }
 
