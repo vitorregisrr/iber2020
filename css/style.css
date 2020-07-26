@@ -556,7 +556,13 @@ button:focus {
 
 @media screen and (max-width: 992px) {
   .main-nav__brand {
-    width: 140px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav__brand {
+    width: 160px;
   }
 }
 
@@ -658,9 +664,10 @@ button:focus {
   position: absolute;
   top: 30px;
   left: 50%;
+  height: 40px;
+  width: 40px;
   transform: translateX(-50%);
   color: #fff;
-  font-size: 20px;
   display: none;
   background: none;
   border: none;
@@ -670,6 +677,24 @@ button:focus {
   .main-nav__close {
     display: block;
   }
+}
+
+.main-nav__close div {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 25px;
+  background-color: #fff;
+}
+
+.main-nav__close div:first-child {
+  transform: rotate(44deg) translateX(-50%);
+  top: 1px;
+}
+
+.main-nav__close div:last-child {
+  transform: rotate(-45deg) translateX(-50%);
 }
 
 .main-nav::after {
@@ -981,7 +1006,7 @@ button:focus {
 .btn-cprimary {
   font-family: 'Helvetica Neue', sans-serif;
   border-radius: 4px;
-  padding: 4.6px 18px;
+  padding: 13px 18px;
   background-color: #7DA04C;
   text-transform: uppercase;
   text-align: center;
@@ -1002,7 +1027,7 @@ button:focus {
 .btn-csecondary {
   font-family: 'Helvetica Neue', sans-serif;
   border-radius: 4px;
-  padding: 4.6px 18px;
+  padding: 13px 18px;
   background-color: #30959F;
   text-transform: uppercase;
   text-align: center;
@@ -1023,7 +1048,7 @@ button:focus {
 .btn-cdark {
   font-family: 'Helvetica Neue', sans-serif;
   border-radius: 4px;
-  padding: 4.6px 18px;
+  padding: 13px 18px;
   background-color: #707070;
   text-transform: uppercase;
   text-align: center;
@@ -1039,6 +1064,34 @@ button:focus {
 .btn-cdark:hover {
   color: #fff;
   background-color: #2b868f;
+}
+
+.btn-outline-white {
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  padding: 14px 50px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn-outline-white {
+    padding: 10px 40px;
+  }
+}
+
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #707070;
 }
 
 .btn-transparent {
@@ -1110,12 +1163,10 @@ button:focus {
   }
 }
 
-.home-banner {
-  height: 96vh;
-}
-
 .home-banner__caption {
   position: absolute;
+  top: 0;
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -1129,6 +1180,217 @@ button:focus {
   }
 }
 
+.banner-strip {
+  position: relative;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-strip {
+    flex-direction: column;
+  }
+}
+
+.banner-strip__img {
+  position: relative;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-strip__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-strip__img {
+    width: 100%;
+  }
+}
+
+.banner-strip__img img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-strip__img img {
+    height: 130px;
+  }
+}
+
+.banner-strip__caption {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 150px;
+  padding-left: 80px;
+  background-color: #6BB547;
+}
+
+@media screen and (max-width: 1320px) {
+  .banner-strip__caption {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-strip__caption {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-strip__caption {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-strip__caption {
+    flex-direction: column;
+    height: 120px;
+    padding-bottom: 10px;
+  }
+}
+
+.banner-strip__caption:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background-color: #6BB547;
+  width: 150px;
+  height: 150%;
+  display: block;
+  transform: rotate(20deg);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-strip__caption:after {
+    width: 105%;
+    transform: rotate(-2deg);
+    left: -10px;
+    top: -19px;
+  }
+}
+
+.banner-strip__caption .inner-title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 0;
+  margin-right: 60px;
+  z-index: 3;
+  word-spacing: 2px;
+}
+
+@media screen and (max-width: 1320px) {
+  .banner-strip__caption .inner-title {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-strip__caption .inner-title {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-strip__caption .inner-title {
+    font-size: 23px;
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+.banner-strip__caption a {
+  z-index: 3;
+}
+
+.banner-folha {
+  position: relative;
+}
+
+.banner-folha__caption .inner-title {
+  color: #7DA04C;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 90px;
+  margin-bottom: 30px;
+}
+
+.banner-folha__caption .inner-desc {
+  color: #707070;
+  font-weight: 400;
+  font-size: 21px;
+  max-width: 500px;
+}
+
+.banner-folha__caption .inner-desc p {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-folha__caption {
+    padding-top: 60px;
+  }
+}
+
+.banner-folha__bg {
+  position: absolute;
+  top: 0;
+  right: -460px;
+  width: 1400px;
+}
+
+@media screen and (max-width: 1300px) {
+  .banner-folha__bg {
+    width: 1250px;
+    right: -400px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-folha__bg {
+    width: 1000px;
+    right: -400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-folha__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    margin-bottom: -110px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner-folha__bg {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 400px;
+    margin-bottom: -110px;
+  }
+}
+
 body {
   position: relative;
   margin: 0;
@@ -1137,6 +1399,7 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-weight: 400;
+  background-color: #fff;
   color: #707070;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

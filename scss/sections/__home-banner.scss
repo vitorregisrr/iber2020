@@ -1,8 +1,9 @@
 .home-banner{
-    height: 96vh;
 
     &__caption{
         position: absolute;
+        top: 0;
+        pointer-events: none;
         opacity: 0;
     }
 

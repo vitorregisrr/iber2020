@@ -22,9 +22,14 @@
         @media screen and (max-width: $bp-XL) {
             width: 230px;
         }
-                    @media screen and (max-width: $bp-LG) {
-                        width: 140px;
-                    }
+
+        @media screen and (max-width: $bp-LG) {
+            width: 200px;
+        }
+
+        @media screen and (max-width: $bp-MD) {
+            width: 160px;
+        }
 
         img {
             width: 100%;
@@ -46,17 +51,15 @@
             @media screen and (max-width: $bp-LG) {
                 width: 100%;
             }
-
             &:not(:last-child) {
                 margin-right: 30px;
-                
                 @media screen and (max-width: $bp-XL) {
                     margin-right: 20px;
                 }
-                            @media screen and (max-width: $bp-LG) {
-                                margin-right: 0;
-                                margin-bottom: 15px;
-                            }
+                @media screen and (max-width: $bp-LG) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
             }
 
             a {
@@ -83,7 +86,6 @@
         border: none;
         width: 44px;
         margin-right: 5px;
-
         @media screen and (max-width: $bp-LG) {
             display: block;
         }
@@ -93,7 +95,6 @@
             height: 1px;
             background-color: #fff;
             border-radius: 2px;
-
             &:not(:last-child) {
                 margin-bottom: 6.3px;
             }
@@ -104,14 +105,31 @@
         position: absolute;
         top: 30px;
         left: 50%;
+        height: 40px;
+        width: 40px;
         transform: translateX(-50%);
         color: #fff;
-        font-size: 20px;
         display: none;
         background: none;
         border: none;
         @media screen and (max-width: $bp-LG) {
             display: block;
+        }
+
+        div {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 1px;
+            height: 25px;
+            background-color: #fff;
+            &:first-child {
+                transform: rotate(44deg) translateX(-50%);
+                top: 1px;
+            }
+            &:last-child {
+                transform: rotate(-45deg) translateX(-50%);
+            }
         }
     }
 
