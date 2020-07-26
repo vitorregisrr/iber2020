@@ -1275,10 +1275,10 @@ button:focus {
   z-index: 2;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .banner-strip__caption:after {
     width: 105%;
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
     left: -10px;
     top: -19px;
   }
@@ -1385,7 +1385,7 @@ button:focus {
   .banner-folha__bg {
     position: absolute;
     top: 0;
-    right: -10px;
+    right: -31px;
     width: 400px;
     margin-bottom: -110px;
   }

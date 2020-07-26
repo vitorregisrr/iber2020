@@ -74,9 +74,9 @@
             transform: rotate(20deg);
             z-index: 2;
 
-            @media screen and (max-width: $bp-XL){
+            @media screen and (max-width: $bp-LG){
                 width: 105%;
-                transform: rotate(-2deg);
+                transform: rotate(0deg);
                 left: -10px;
                 top: -19px;
             }
