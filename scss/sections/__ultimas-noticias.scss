@@ -1,0 +1,25 @@
+.ultimas-noticias{
+    padding: 40px 0;
+    background-color: #F4F4F4;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        
+        @media screen and (max-width: $bp-LG){
+            display: flex;
+            justify-content: center;
+        }
+        
+        .inner-title{
+            color: #7DA04C;
+            font-size: 34px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0;
+
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.banner-planeta{
+    background-color: #30959F;
+
+    &__caption{
+        max-width: 397px;
+
+        .inner-title{
+            font-size: 34px;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .inner-desc{
+            font-size: 24px;
+            color: #FFFFFF;
+            font-weight: 400;
+        }
+    }
+}

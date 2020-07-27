@@ -117,7 +117,7 @@
 
         &-battery {
             position: absolute;
-            right: -34%;
+            right: -38%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -203,6 +203,12 @@
                 color: #fff !important;
                 border-radius: 4px;
                 font-size: 20px;
+                @include transition();
+
+                &:hover{
+                    background-color: darken($color-secondary, 4);
+                    transform: scale(1.04) translateY(-50%);
+                }
 
                 &::after, &::before{
                     display: none !important;
