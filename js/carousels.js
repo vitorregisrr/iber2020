@@ -2,30 +2,37 @@
     'use strict';
 
     // Home Carousel //
-    const loginCarousel = $("#login-carousel");
-    loginCarousel.owlCarousel({
-        loop: true,
-        autoplay: true,
+    const conhecaCarousel = $(".conheca__carousel");
+    conhecaCarousel.owlCarousel({
         margin: 0,
-        items: 1,
         autoHeight: true,
-        autoHeightClass: 'owl-height',
-        center: true,
-        nav: false,
-        dots: true,
+        center: false,
+        margin: 30,
+        nav: true,
+        dots: false,
         startPosition: 0,
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
-        dotsContainer: '#login-carousel-dots',
-        onChange: function(e){
-
-        },
+        infinite: true,
+        loop: true,
+        navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
+        responsive: {
+            300: {
+                items: 1,
+                margin: 15
+            },
+            600: {
+                items: 2,
+                margin: 10,
+            },
+            
+            768: {
+                items: 3,
+                margin: 30
+            },
+            1098: {
+                items: 6,
+            }
+        }
     });
-
-    loginCarousel.on('changed.owl.carousel', function(event) {
-        $('.backgrounds .bg').attr('data-active', false);
-        $($('.backgrounds .bg')[event.page.index]).attr('data-active', true);
-    })
 
     window.dispatchEvent(new Event('resize'));
 })();

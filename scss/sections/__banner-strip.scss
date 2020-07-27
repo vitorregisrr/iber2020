@@ -76,7 +76,7 @@
 
             @media screen and (max-width: $bp-LG){
                 width: 105%;
-                transform: rotate(0deg);
+                transform: rotate(2deg);
                 left: -10px;
                 top: -19px;
             }
@@ -102,7 +102,7 @@
             }
 
             @media screen and (max-width: $bp-MD){
-                font-size: 23px;
+                font-size: 20px;
                 margin-bottom: 15px;
                 margin-right: 0;
             }
@@ -110,6 +110,11 @@
 
         a{
             z-index: 3;
+
+
+            @media screen and (max-width: $bp-MD){
+                padding: 7px 30px;
+            }
         }
     }
 }

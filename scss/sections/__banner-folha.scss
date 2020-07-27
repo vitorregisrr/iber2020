@@ -1,7 +1,22 @@
 .banner-folha{
     position: relative;
-
+    padding-bottom: 260px;
+    background: #fff;
+    
+    @media screen and (max-width: $bp-MD){
+        padding-bottom: 140px;
+    }
+    
     &__caption{
+
+        @media screen and (max-width: $bp-LG){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        
         .inner-title{
             color: #7DA04C;
             font-size: 32px;
@@ -16,6 +31,10 @@
             font-weight: 400;
             font-size: 21px;
             max-width: 500px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 19px;
+            }
             
             p{
                 margin-bottom: 30px;
