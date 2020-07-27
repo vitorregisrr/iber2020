@@ -1045,6 +1045,31 @@ button:focus {
   background-color: #2b868f;
 }
 
+.btn-cwhite {
+  font-family: 'Helvetica Neue', sans-serif;
+  border-radius: 4px;
+  padding: 11px 18px;
+  background-color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #30959F;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-cwhite:hover {
+  color: #30959F;
+  -webkit-transform: scale(1.06);
+  -moz-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
 .btn-cdark {
   font-family: 'Helvetica Neue', sans-serif;
   border-radius: 4px;
@@ -1195,7 +1220,6 @@ button:focus {
 .footer {
   background-color: #2A2A2A;
   padding: 40px 0;
-  padding-bottom: 60px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1687,10 +1711,31 @@ button:focus {
 
 .banner-planeta {
   background-color: #30959F;
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-planeta {
+    padding: 50px 0;
+  }
 }
 
 .banner-planeta__caption {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 397px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-planeta__caption {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
 }
 
 .banner-planeta__caption .inner-title {
@@ -1698,6 +1743,21 @@ button:focus {
   font-weight: bold;
   text-align: left;
   margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-planeta__caption .inner-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner-planeta__caption .inner-title {
+    text-align: center;
+    font-size: 34px;
+  }
 }
 
 .banner-planeta__caption .inner-desc {
@@ -1706,8 +1766,217 @@ button:focus {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1200px) {
+  .banner-planeta__caption .inner-desc {
+    font-size: 22px;
+  }
+}
+
+.banner-planeta__img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-planeta__img {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.banner-caixa {
+  background-image: url("../../images/backgrounds/banner-associacao.png");
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 90px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-caixa {
+    padding-top: 90px;
+    padding-bottom: 70px;
+    background-position: -140px 0;
+  }
+}
+
+.banner-caixa__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 140px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-caixa__caption {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+
+.banner-caixa__caption .inner-title {
+  font-size: 32px;
+  color: #FECB48;
+  text-transform: uppercase;
+  max-width: 535px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-caixa__caption .inner-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.banner-caixa__caption .inner-desc {
+  color: #FFFFFF;
+  font-size: 24px;
+  max-width: 432px;
+  margin-bottom: 35px;
+}
+
+.banner-caixa__caption .btn {
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+.banner-caixa__depoimentos-title {
+  text-align: center;
+  font-size: 32px;
+  color: #FECB48;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.banner-caixa__carousel .owl-nav {
+  padding-top: 10px;
+}
+
+.banner-caixa__carousel .owl-nav .owl-next,
+.banner-caixa__carousel .owl-nav .owl-prev {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #FECB48 !important;
+  color: #FECB48 !important;
+  border-radius: 4px;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-caixa__carousel .owl-nav .owl-next:hover,
+.banner-caixa__carousel .owl-nav .owl-prev:hover {
+  color: #FFFF !important;
+  background-color: #FECB48;
+  transform: scale(1.04);
+}
+
+.banner-caixa__carousel .owl-nav .owl-next::after, .banner-caixa__carousel .owl-nav .owl-next::before,
+.banner-caixa__carousel .owl-nav .owl-prev::after,
+.banner-caixa__carousel .owl-nav .owl-prev::before {
+  display: none !important;
+}
+
+.banner-caixa__carousel .owl-nav .owl-next i,
+.banner-caixa__carousel .owl-nav .owl-prev i {
+  font-size: 12px;
+}
+
+.banner-caixa__carousel .owl-nav .owl-prev {
+  margin-right: 20px;
+}
+
+.banner-caixa__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-caixa__item-desc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 25px;
+  color: #fff;
+  font-size: 21px;
+  line-height: 1.4;
+  text-align: center;
+  border: 1.1px solid #FECB48;
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: -2px;
+}
+
+.banner-caixa__item-desc:after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/ico/quotes.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banner-caixa__item-desc:before {
+  content: '';
+  position: absolute;
+  bottom: 24px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../../images/ico/quotes.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+}
+
+.banner-caixa__item-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.banner-caixa__item-footer img {
+  display: block;
+  width: 120px !important;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FECB48;
+  margin-top: -45px;
+  margin-bottom: 20px;
+}
+
+.banner-caixa__item-footer .name {
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner-caixa__item-footer .ocup {
+  font-size: 20px;
+  color: #707070;
+  margin-bottom: 50px;
+}
+
 .ultimas-noticias {
   padding: 40px 0;
+  padding-bottom: 76px;
   background-color: #F4F4F4;
 }
 
@@ -1934,7 +2203,7 @@ button:focus {
 }
 
 .conheca__carousel {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1950,7 +2219,7 @@ button:focus {
   font-weight: bold;
   text-align: center;
   margin-top: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1965,7 +2234,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .conheca__carousel .owl-nav .owl-prev, .conheca__carousel .owl-nav .owl-next {

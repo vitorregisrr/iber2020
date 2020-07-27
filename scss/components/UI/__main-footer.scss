@@ -1,7 +1,6 @@
 .footer {
     background-color: #2A2A2A;
     padding: 40px 0;
-    padding-bottom: 60px;
 
     &__links {
 
@@ -10,7 +9,7 @@
             flex-direction: column;
             align-items: center;
         }
-        
+
         li.title {
             color: #7DA04C !important;
             font-weight: bold;

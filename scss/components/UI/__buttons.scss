@@ -31,6 +31,22 @@
         background-color: darken($color-secondary, 4);
     }
 }
+.btn-cwhite{
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 11px 18px;
+    background-color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #30959F;
+    @include transition();
+
+    &:hover{
+        color: #30959F;
+        @include scale(1.06);
+    }
+}
 
 .btn-cdark{
     font-family: 'Helvetica Neue', sans-serif;
