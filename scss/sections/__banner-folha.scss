@@ -3,6 +3,10 @@
     padding-bottom: 260px;
     background: #fff;
     
+    @media screen and (max-width: $bp-LG){
+        padding-bottom: 150px;
+    }
+
     @media screen and (max-width: $bp-MD){
         padding-bottom: 130px;
     }
@@ -24,6 +28,15 @@
             font-weight: bold;
             padding-top: 90px;
             margin-bottom: 30px;
+
+            @media screen and (max-width: $bp-LG){
+                padding-top: 130px;
+            }
+            
+            @media screen and (max-width: $bp-MD){
+                padding-top: 100px;
+            }
+        
         }
 
         .inner-desc{

@@ -1447,6 +1447,12 @@ button:focus {
   background: #fff;
 }
 
+@media screen and (max-width: 992px) {
+  .banner-folha {
+    padding-bottom: 150px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .banner-folha {
     padding-bottom: 130px;
@@ -1470,6 +1476,18 @@ button:focus {
   font-weight: bold;
   padding-top: 90px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .banner-folha__caption .inner-title {
+    padding-top: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-folha__caption .inner-title {
+    padding-top: 100px;
+  }
 }
 
 .banner-folha__caption .inner-desc {
@@ -2281,6 +2299,13 @@ button:focus {
 @media screen and (max-width: 992px) {
   .conheca__carousel {
     padding: 0 40px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .conheca__carousel {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
