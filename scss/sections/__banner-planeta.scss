@@ -48,6 +48,11 @@
             @media screen and (max-width: $bp-XL){
                 font-size: 22px;
             }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
     
         }
     }

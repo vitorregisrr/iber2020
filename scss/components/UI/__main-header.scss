@@ -74,15 +74,15 @@
             padding-right: 40px;
             margin-top: 4px;
 
+            @media screen and (max-width: $bp-LG) {
+                padding-right: 18px;
+                padding-left: 6px;
+            }
+
             @media screen and (max-width: $bp-MD) {
                 order: 4;
                 padding-left: 9px;
                 padding-right: 0;
-            }
-
-            @media screen and (max-width: $bp-LG) {
-                padding-right: 18px;
-                padding-left: 6px;
             }
 
             i {

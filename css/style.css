@@ -489,18 +489,18 @@ button:focus {
   margin-top: 4px;
 }
 
+@media screen and (max-width: 992px) {
+  .main-header__left .socials {
+    padding-right: 18px;
+    padding-left: 6px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .main-header__left .socials {
     order: 4;
     padding-left: 9px;
     padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .main-header__left .socials {
-    padding-right: 18px;
-    padding-left: 6px;
   }
 }
 
@@ -640,7 +640,7 @@ button:focus {
   background: none;
   border: none;
   width: 44px;
-  margin-right: 5px;
+  margin-right: -3px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1266,6 +1266,12 @@ button:focus {
   text-align: right;
 }
 
+@media screen and (max-width: 992px) {
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
 .text-underline {
   text-decoration: underline !important;
 }
@@ -1327,7 +1333,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .banner-strip__img img {
-    height: 130px;
+    height: 100px;
   }
 }
 
@@ -1366,6 +1372,7 @@ button:focus {
     flex-direction: column;
     height: 120px;
     padding-bottom: 10px;
+    padding-top: 4px;
   }
 }
 
@@ -1380,6 +1387,7 @@ button:focus {
   display: block;
   transform: rotate(20deg);
   z-index: 2;
+  opacity: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -1441,7 +1449,7 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .banner-folha {
-    padding-bottom: 140px;
+    padding-bottom: 130px;
   }
 }
 
@@ -1682,8 +1690,7 @@ button:focus {
 
 @media screen and (max-width: 576px) {
   .pontos-coleta__map-desc {
-    left: 50%;
-    transform: translateX(-38%);
+    left: 12%;
     bottom: -100px;
   }
 }
@@ -1772,6 +1779,13 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .banner-planeta__caption .inner-desc {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+
 .banner-planeta__img {
   width: 100%;
 }
@@ -1792,8 +1806,7 @@ button:focus {
 
 @media screen and (max-width: 992px) {
   .banner-caixa {
-    padding-top: 90px;
-    padding-bottom: 70px;
+    padding: 65px 0;
     background-position: -140px 0;
   }
 }
@@ -1829,11 +1842,23 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .banner-caixa__caption .inner-title {
+    font-size: 27px;
+  }
+}
+
 .banner-caixa__caption .inner-desc {
   color: #FFFFFF;
   font-size: 24px;
   max-width: 432px;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__caption .inner-desc {
+    font-size: 19px;
+  }
 }
 
 .banner-caixa__caption .btn {
@@ -1848,6 +1873,13 @@ button:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__depoimentos-title {
+    font-size: 27px;
+    margin-bottom: 25px;
+  }
 }
 
 .banner-caixa__carousel .owl-nav {
@@ -1897,6 +1929,10 @@ button:focus {
 .banner-caixa__item {
   display: flex;
   flex-direction: column;
+  border: 1.1px solid #FECB48;
+  border-radius: 5px;
+  padding-bottom: 0.1px;
+  overflow: hidden;
 }
 
 .banner-caixa__item-desc {
@@ -1904,28 +1940,43 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 65px 25px;
+  padding: 65px 25px 78px;
   color: #fff;
   font-size: 21px;
   line-height: 1.4;
   text-align: center;
-  border: 1.1px solid #FECB48;
   border-bottom: none;
-  border-radius: 4px 4px 0 0;
+  border-radius: 0 0 4px 4px;
   margin-bottom: -2px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__item-desc {
+    padding: 55px 25px 65px;
+    font-size: 19px;
+  }
 }
 
 .banner-caixa__item-desc:after {
   content: '';
   position: absolute;
-  top: 22px;
+  top: 20px;
   left: 20px;
   width: 30px;
   height: 30px;
-  background-image: url(../../images/ico/quotes.png);
+  background-image: url("../../images/ico/quotes.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__item-desc:after {
+    width: 21px;
+    height: 21px;
+    top: 17px;
+    left: 16px;
+  }
 }
 
 .banner-caixa__item-desc:before {
@@ -1935,11 +1986,19 @@ button:focus {
   right: 20px;
   width: 30px;
   height: 30px;
-  background-image: url(../../images/ico/quotes.png);
+  background-image: url("../../images/ico/quotes.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(180deg);
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__item-desc:before {
+    width: 21px;
+    height: 21px;
+    right: 16px;
+  }
 }
 
 .banner-caixa__item-footer {
@@ -1959,7 +2018,14 @@ button:focus {
   object-fit: cover;
   border: 4px solid #FECB48;
   margin-top: -45px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__item-footer img {
+    width: 100px !important;
+    height: 100px;
+  }
 }
 
 .banner-caixa__item-footer .name {
@@ -1971,7 +2037,13 @@ button:focus {
 .banner-caixa__item-footer .ocup {
   font-size: 20px;
   color: #707070;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-caixa__item-footer .ocup {
+    margin-bottom: 30px;
+  }
 }
 
 .ultimas-noticias {
@@ -2280,6 +2352,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .conheca__carousel .owl-nav .owl-prev {
+    left: 10px;
+  }
+}
+
 .conheca__carousel .owl-nav .owl-next {
   right: -50px;
 }
@@ -2287,6 +2365,12 @@ button:focus {
 @media screen and (max-width: 992px) {
   .conheca__carousel .owl-nav .owl-next {
     right: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conheca__carousel .owl-nav .owl-next {
+    right: 10px;
   }
 }
 

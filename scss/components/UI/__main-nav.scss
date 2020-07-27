@@ -85,7 +85,8 @@
         background: none;
         border: none;
         width: 44px;
-        margin-right: 5px;
+        margin-right: -3px;
+
         @media screen and (max-width: $bp-LG) {
             display: block;
         }

@@ -28,7 +28,7 @@
             z-index: 1;
 
             @media screen and (max-width: $bp-MD){
-                height: 130px;
+                height: 100px;
             }
         }
     }
@@ -60,6 +60,7 @@
             flex-direction: column;
             height: 120px;
             padding-bottom: 10px;
+            padding-top: 4px;
         }
 
         &:after{
@@ -73,6 +74,7 @@
             display: block;
             transform: rotate(20deg);
             z-index: 2;
+            opacity: 0;
 
             @media screen and (max-width: $bp-LG){
                 width: 105%;

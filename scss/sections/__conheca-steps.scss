@@ -226,12 +226,20 @@
                 @media screen and (max-width: $bp-LG){
                    left: 5px;
                 }
+
+                @media screen and (max-width: $bp-MD){
+                    left: 10px;
+                 }
             }
+            
             .owl-next{
                 right: -50px;
 
                 @media screen and (max-width: $bp-LG){
                     right: 5px;
+                 }
+                @media screen and (max-width: $bp-MD){
+                    right: 10px;
                  }
             }
         }
