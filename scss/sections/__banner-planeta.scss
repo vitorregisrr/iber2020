@@ -41,9 +41,11 @@
         }
 
         .inner-desc{
-            font-size: 24px;
+            font-size: 23px;
             color: #FFFFFF;
+            line-height: 1.4;
             font-weight: 400;
+            margin-bottom: 35px;
 
             @media screen and (max-width: $bp-XL){
                 font-size: 22px;

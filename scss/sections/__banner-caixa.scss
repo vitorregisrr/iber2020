@@ -25,11 +25,13 @@
             color: #FECB48;
             text-transform: uppercase;
             max-width: 535px;
-            margin-bottom: 30px;
+            margin-bottom: 27px;
+
             @media screen and (max-width: $bp-LG) {
                 font-size: 30px;
                 margin-bottom: 20px;
             }
+
             @media screen and (max-width: $bp-MD) {
                 font-size: 27px;
             }

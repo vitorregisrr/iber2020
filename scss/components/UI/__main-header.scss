@@ -70,8 +70,8 @@
         .socials {
             display: flex;
             white-space: nowrap;
-            padding-left: 15px;
-            padding-right: 40px;
+            padding-left: 8px;
+            padding-right: 24px;
             margin-top: 4px;
 
             @media screen and (max-width: $bp-LG) {
@@ -87,7 +87,7 @@
 
             i {
                 font-size: 21px;
-                margin-right: 8px;
+                margin-right: 12px;
 
                 @media screen and (max-width: $bp-LG) {
                     margin-right: 5px;
