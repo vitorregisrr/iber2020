@@ -1266,6 +1266,7 @@ button:focus {
   margin-top: 15px;
   text-align: right;
   font-size: 13px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 992px) {
