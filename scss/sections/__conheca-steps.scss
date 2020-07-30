@@ -202,7 +202,7 @@
                 justify-content: center;
                 align-items: center;
                 position: absolute;
-                top: 50%;
+                top: 46%;
                 transform: translateY(-50%);
                 width: 30px;
                 height: 30px;
@@ -227,7 +227,7 @@
             }
         
             .owl-prev{
-                left: -50px;
+                left: -40px;
 
                 @media screen and (max-width: $bp-LG){
                    left: 5px;
@@ -239,7 +239,7 @@
             }
 
             .owl-next{
-                right: -50px;
+                right: -40px;
 
                 @media screen and (max-width: $bp-LG){
                     right: 5px;

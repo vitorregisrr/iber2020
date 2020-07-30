@@ -1531,7 +1531,8 @@ button:focus {
   color: #707070;
   font-weight: 400;
   font-size: 21px;
-  max-width: 500px;
+  max-width: 530px;
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -1882,7 +1883,7 @@ button:focus {
   font-size: 34px;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -1935,7 +1936,7 @@ button:focus {
 .banner-caixa {
   background-image: url("../../images/backgrounds/banner-associacao.png");
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 90px;
 }
 
@@ -2456,7 +2457,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
+  top: 46%;
   transform: translateY(-50%);
   width: 30px;
   height: 30px;
@@ -2485,7 +2486,7 @@ button:focus {
 }
 
 .conheca__carousel .owl-nav .owl-prev {
-  left: -50px;
+  left: -40px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2501,7 +2502,7 @@ button:focus {
 }
 
 .conheca__carousel .owl-nav .owl-next {
-  right: -50px;
+  right: -40px;
 }
 
 @media screen and (max-width: 992px) {
