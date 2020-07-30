@@ -1799,7 +1799,7 @@ button:focus {
   text-transform: uppercase;
   font-weight: bold;
   color: #7DA04C;
-  margin-bottom: 24px;
+  margin-bottom: 39px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1831,6 +1831,10 @@ button:focus {
     width: 100%;
     padding: 40px 16px;
   }
+}
+
+.interna-sobre__content .text p {
+  margin-bottom: 25px;
 }
 
 .interna-sobre__img {
