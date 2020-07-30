@@ -26,5 +26,15 @@
         $('#input-recebimento').val($(this).attr('data-value'))
     });
 
+    $('[data-toggle="legislacao-item"]').click( function(){
+        var item = $(this).closest('.legislacao__item');
+
+        const isActive = $(this).hasClass('active') ? true : false;
+
+        item.find('.header').toggleClass('active');
+        item.find('.content').toggleClass('active');
+    })
+    
     window.dispatchEvent(new Event('resize'));
+
 })();
