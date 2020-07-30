@@ -733,6 +733,24 @@ button:focus {
   }
 }
 
+.main-nav.branco {
+  background-color: #fff;
+  padding: 17px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav.branco .main-nav__links li a {
+  color: #707070 !important;
+}
+
+.main-nav.branco .main-nav__brand img {
+  width: 250px;
+}
+
+.main-nav.branco:after {
+  display: none;
+}
+
 .form-control {
   width: 100%;
   font-size: 14px;
@@ -1735,6 +1753,83 @@ button:focus {
 .pontos-coleta__map-desc li {
   display: flex;
   padding: 0;
+}
+
+.interna-sobre {
+  position: relative;
+  display: flex;
+  justify-content: stretch;
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+  .interna-sobre {
+    flex-direction: column;
+  }
+}
+
+.interna-sobre__header .subtitle {
+  color: #707070;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.interna-sobre__header .title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7DA04C;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .interna-sobre__header .title {
+    margin-bottom: 20px;
+  }
+}
+
+.interna-sobre__content {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 140px;
+  padding-left: 50px;
+  padding-top: 85px;
+  padding-bottom: 40px;
+  width: 50%;
+  background-image: url(../../images/backgrounds/bg-interna.png);
+  background-size: cover;
+}
+
+.interna-sobre__content > div {
+  max-width: 523px;
+}
+
+@media screen and (max-width: 992px) {
+  .interna-sobre__content {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 40px 16px;
+  }
+}
+
+.interna-sobre__img {
+  position: relative;
+  z-index: 5;
+  width: 50%;
+  min-height: 692px;
+  margin-bottom: -4px;
+  flex-grow: 1;
+  background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .interna-sobre__img {
+    width: 100%;
+    min-height: 400px;
+  }
 }
 
 .banner-planeta {

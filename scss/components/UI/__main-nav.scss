@@ -7,7 +7,6 @@
     padding-top: 20px;
     z-index: 10;
     letter-spacing: 0.2px;
-
     @media screen and (max-width: $bp-LG) {
         top: 50px;
         padding-top: 15px;
@@ -23,11 +22,9 @@
         @media screen and (max-width: $bp-XL) {
             width: 230px;
         }
-
         @media screen and (max-width: $bp-LG) {
             width: 200px;
         }
-
         @media screen and (max-width: $bp-MD) {
             width: 160px;
         }
@@ -87,7 +84,6 @@
         border: none;
         width: 44px;
         margin-right: -3px;
-
         @media screen and (max-width: $bp-LG) {
             display: block;
         }
@@ -168,6 +164,29 @@
                 opacity: 0;
                 pointer-events: none;
             }
+        }
+    }
+
+    &.branco {
+        background-color: #fff;
+        padding: 17px 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,.1);
+
+        .main-nav__links {
+            li {
+               a{
+                color: #707070 !important;
+               }
+            }
+        }
+
+        .main-nav__brand{
+            img{
+                width: 250px;
+            }
+        }
+        &:after {
+            display: none;
         }
     }
 }
