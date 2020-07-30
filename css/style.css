@@ -592,7 +592,7 @@ button:focus {
 }
 
 .main-nav__links li:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 33px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -735,7 +735,7 @@ button:focus {
 
 .main-nav.branco {
   background-color: #fff;
-  padding: 17px 0;
+  padding: 12px 0;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -760,7 +760,7 @@ button:focus {
 }
 
 .main-nav.branco .main-nav__toggler div {
-  background-color: #707070 !important;
+  background-color: #7DA04C !important;
 }
 
 .main-nav.branco:after {
@@ -1776,7 +1776,7 @@ button:focus {
   position: relative;
   display: flex;
   justify-content: stretch;
-  padding-top: 100px;
+  padding-top: 91px;
   min-height: 100vh;
 }
 

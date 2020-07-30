@@ -7,6 +7,7 @@
     padding-top: 20px;
     z-index: 10;
     letter-spacing: 0.2px;
+    
     @media screen and (max-width: $bp-LG) {
         top: 50px;
         padding-top: 15px;
@@ -39,6 +40,7 @@
         align-items: center;
         height: 100%;
         font-size: 17px;
+
         @media screen and (max-width: $bp-LG) {
             flex-direction: column;
             height: auto;
@@ -49,8 +51,9 @@
             @media screen and (max-width: $bp-LG) {
                 width: 100%;
             }
+
             &:not(:last-child) {
-                margin-right: 30px;
+                margin-right: 33px;
                 @media screen and (max-width: $bp-XL) {
                     margin-right: 20px;
                 }
@@ -169,7 +172,7 @@
 
     &.branco {
         background-color: #fff;
-        padding: 17px 0;
+        padding: 12px 0;
         box-shadow: 0 3px 6px rgba(0,0,0,.1);
 
         .main-nav__links {
@@ -196,7 +199,7 @@
 
         .main-nav__toggler{
             div{
-                background-color: $color-dark !important;
+                background-color: $color-primary !important;
             }
         }
         &:after {
