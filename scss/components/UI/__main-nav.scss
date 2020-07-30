@@ -176,6 +176,10 @@
             li {
                a{
                 color: #707070 !important;
+
+                @media screen and (max-width: $bp-LG){
+                    color: #fff !important;
+                }
                }
             }
         }
@@ -183,6 +187,16 @@
         .main-nav__brand{
             img{
                 width: 250px;
+
+                @media screen and (max-width: $bp-MD){
+                    width: 150px;
+                }
+            }
+        }
+
+        .main-nav__toggler{
+            div{
+                background-color: $color-dark !important;
             }
         }
         &:after {

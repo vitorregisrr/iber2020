@@ -743,8 +743,24 @@ button:focus {
   color: #707070 !important;
 }
 
+@media screen and (max-width: 992px) {
+  .main-nav.branco .main-nav__links li a {
+    color: #fff !important;
+  }
+}
+
 .main-nav.branco .main-nav__brand img {
   width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav.branco .main-nav__brand img {
+    width: 150px;
+  }
+}
+
+.main-nav.branco .main-nav__toggler div {
+  background-color: #707070 !important;
 }
 
 .main-nav.branco:after {
@@ -1766,6 +1782,7 @@ button:focus {
 @media screen and (max-width: 992px) {
   .interna-sobre {
     flex-direction: column;
+    padding-top: 76px;
   }
 }
 
