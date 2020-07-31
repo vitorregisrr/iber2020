@@ -1845,7 +1845,7 @@ select.form-control {
 }
 
 .banner-caixa {
-  background-image: url("../../images/backgrounds/banner-associacao.png");
+  background-image: url("../images/backgrounds/banner-associacao.png");
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 90px;
@@ -2011,7 +2011,7 @@ select.form-control {
   left: 20px;
   width: 30px;
   height: 30px;
-  background-image: url("../../images/ico/quotes.png");
+  background-image: url("../images/ico/quotes.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2033,7 +2033,7 @@ select.form-control {
   right: 20px;
   width: 30px;
   height: 30px;
-  background-image: url("../../images/ico/quotes.png");
+  background-image: url("../images/ico/quotes.png");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2094,7 +2094,7 @@ select.form-control {
 }
 
 .estrutura {
-  background-image: url(../../images/backgrounds/bg-interna.png);
+  background-image: url(../images/backgrounds/bg-interna.png);
   background-size: cover;
   padding: 170px 0 140px 0;
 }
@@ -2268,7 +2268,7 @@ select.form-control {
 }
 
 .legislacao {
-  background-image: url("../../images/backgrounds/bg-interna.png");
+  background-image: url("../images/backgrounds/bg-interna.png");
   background-position: top;
   padding: 180px 0 120px;
 }
@@ -2469,7 +2469,7 @@ select.form-control {
 }
 
 .pg-interna {
-  background-image: url(../../images/backgrounds/bg-interna.png);
+  background-image: url(../images/backgrounds/bg-interna.png);
   background-size: cover;
   padding: 180px 0 20px 0;
 }
@@ -2552,7 +2552,7 @@ select.form-control {
   height: 140px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../../images/backgrounds/bottom-times.png");
+  background-image: url("../images/backgrounds/bottom-times.png");
 }
 
 @media screen and (max-width: 768px) {
