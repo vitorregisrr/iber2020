@@ -1445,6 +1445,7 @@ select.form-control {
 @media screen and (max-width: 768px) {
   .banner-folha__caption .inner-desc {
     font-size: 19px;
+    margin-bottom: 30px;
   }
 }
 
