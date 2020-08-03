@@ -15,17 +15,6 @@
         }
     });
 
-    $('[data-toggle="expand-markup"]').click(function () {
-        $('.markup').addClass('expanded');
-        $(this).fadeOut();
-    });
-
-    $('#certificado-modal .btn-large-blue').click(function (e) {
-        $('.btn-large-blue').removeClass('active');
-        $(this).addClass('active')
-        $('#input-recebimento').val($(this).attr('data-value'))
-    });
-
     $('[data-toggle="legislacao-item"]').click( function(){
         var item = $(this).closest('.legislacao__item');
 

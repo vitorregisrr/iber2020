@@ -7,6 +7,11 @@
         text-align: center;
     }
 
+    &__centered{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
     &__tag {
         position: absolute;
         font-size: 20px;
