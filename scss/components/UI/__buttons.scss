@@ -16,6 +16,24 @@
     }
 }
 
+.btn-outline-cprimary{
+    font-family: 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    padding: 11px 18px;
+    border: 2px solid #7DA04C;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    color: #7DA04C;
+    @include transition();
+
+    &:hover{
+        color: #fff;
+        background-color: $color-primary;
+    }
+}
+
+
 .btn-csecondary{
     font-family: 'Helvetica Neue', sans-serif;
     border-radius: 4px;

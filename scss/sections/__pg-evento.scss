@@ -1,0 +1,83 @@
+.pg-evento {
+    padding: 180px 0 30px;
+    background-image: url(../images/backgrounds/bg-interna.png);
+    
+    @media screen and (max-width: $bp-MD) {
+        padding-top: 130px;
+        text-align: center;
+    }
+
+    &__tag {
+        position: absolute;
+        font-size: 20px;
+        color: #fff;
+        left: 15px;
+        top: -15px;
+        background-color: #707070;
+        border-radius: 7px;
+        text-transform: uppercase;
+        padding: 4.6px 10px;
+        @media screen and (max-width: $bp-MD) {
+            font-size: 18px;
+        }
+    }
+
+    &__img {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        padding-left: 35px;
+        padding-top: 30px;
+
+        @media screen and (max-width: $bp-LG) {
+            padding-left: 0px;
+        }
+
+        .title {
+            font-size: 32px;
+            color: #707070;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-LG) {
+                font-size: 26px;
+            }
+        }
+
+        .desc {
+            font-size: 18px;
+            margin-bottom: 70px;
+
+            @media screen and (max-width: $bp-LG) {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .subtitle {
+        font-size: 32px;
+        color: #707070;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: $bp-LG) {
+            font-size: 26px;
+        }
+    }    
+
+    &__list{
+        .title{
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+    }
+}
