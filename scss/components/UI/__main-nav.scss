@@ -172,7 +172,7 @@
 
     &.branco {
         background-color: #fff;
-        padding: 12px 0;
+        padding: 15px 0;
         box-shadow: 0 3px 6px rgba(0,0,0,.1);
 
         .main-nav__links {
@@ -189,7 +189,7 @@
 
         .main-nav__brand{
             img{
-                width: 250px;
+                width: 240px;
 
                 @media screen and (max-width: $bp-MD){
                     width: 150px;

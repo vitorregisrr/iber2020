@@ -1,0 +1,35 @@
+.servico-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.23);
+    border-radius: 4px;
+    padding: 35px;
+    padding-top: 26px;
+    min-height: 205px;
+    background: #fff;
+    margin-bottom: 25px;
+
+    img{
+        width: 50px;
+        margin-bottom: 19px;
+    }
+
+    .title{
+        font-size: 14px;
+        color: #707070;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 150px;
+    }
+
+    .btn-cprimary{
+        display: block;
+        margin-top: auto;
+        font-size: 14px;
+        padding: 4px 17px;
+    }
+}
