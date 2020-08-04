@@ -151,7 +151,6 @@ $("#form-coleta").validate({
     }
 });
 
-// Formulários
 $("#form-login").validate({
     rules: {
         usuario: {
@@ -159,6 +158,27 @@ $("#form-login").validate({
         },
 
         senha: {
+            required: true
+        }
+    },
+});
+
+$("#form-contato").validate({
+    rules: {
+        nome: {
+            required: true
+        },
+
+        email: {
+            required: true,
+            email: true
+        },
+
+        telefone: {
+            required: true
+        },
+
+        mensagem: {
             required: true
         }
     },
