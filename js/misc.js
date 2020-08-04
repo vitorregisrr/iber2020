@@ -24,6 +24,10 @@
         item.find('.content').toggleClass('active');
     })
     
+    $('.disabled-link').click( function(e){
+        e.preventDefault();
+    });
+    
     window.dispatchEvent(new Event('resize'));
 
 })();
