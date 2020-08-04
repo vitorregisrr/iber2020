@@ -1,5 +1,5 @@
 .container--max {
-  max-width: 1450px !important;
+  max-width: 1490px !important;
 }
 
 .object-cover {
@@ -50,6 +50,26 @@
 
 .bg-gray-dark {
   background-color: #EDEDED !important;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+small.md {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  small.md {
+    font-size: 12px;
+  }
 }
 
 .inner-title {
@@ -199,8 +219,8 @@ button:focus {
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.eot");
-  src: url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.woff") format("woff"), url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0e6de1ec911a2e267ff136bbdd384a44.svg#Helvetica Neue") format("svg");
+  src: url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot");
+  src: url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.woff") format("woff"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0d49fc455f4a8951a42daf952412a713.svg#Helvetica Neue") format("svg");
 }
 
 .owl-carousel.nav-center .owl-nav {
@@ -777,24 +797,17 @@ button:focus {
   font-weight: 400;
   height: 45px;
   border-radius: 4px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .form-control:focus {
   outline: none;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   color: #383838;
 }
 
-.form-control[type="password"] {
-  font-size: 35px;
-  line-height: 20px;
-  letter-spacing: -2px;
-  padding: 2.8px 14px;
-}
-
 .form-control.error {
-  border-color: #e07777;
+  border: 1px solid #e07777 !important;
 }
 
 .form-control.noshadow {
@@ -816,9 +829,10 @@ select.form-control {
   margin-bottom: 3px;
 }
 
-.form-group label.error {
-  color: #e07777;
+label.error {
+  color: #e07777 !important;
   font-size: 13px;
+  width: 100%;
   margin-top: 4px;
 }
 
@@ -947,6 +961,7 @@ select.form-control {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
+  background: transparent;
   color: #7DA04C;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2839,6 +2854,12 @@ select.form-control {
 
 .pg-interna__header p {
   max-width: 503px;
+}
+
+@media screen and (max-width: 992px) {
+  .pg-interna__header p {
+    margin: 0 auto;
+  }
 }
 
 .pg-evento {

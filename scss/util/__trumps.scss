@@ -1,5 +1,5 @@
 .container--max {
-    max-width: 1450px !important;
+    max-width: 1490px !important;
 }
 
 .object-cover {
@@ -48,4 +48,20 @@
 
 .bg-gray-dark{
     background-color: #EDEDED !important;
+}
+
+h5{
+    font-size: 24px;
+    
+    @media screen and (max-width: $bp-LG){
+        font-size: 20px;
+    }
+}
+
+small.md{
+    font-size: 14px;
+
+    @media screen and (max-width: $bp-MD){
+        font-size: 12px;
+    }
 }

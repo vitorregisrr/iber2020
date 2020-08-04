@@ -28,6 +28,10 @@
 
         p{
             max-width: 503px;
+
+            @media screen and (max-width: $bp-LG){
+                margin: 0 auto;
+            }
         }
     }
 }
